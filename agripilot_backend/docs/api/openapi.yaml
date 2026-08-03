@@ -1,0 +1,50 @@
+openapi: 3.0.3
+info:
+  title: AgriPilot API
+  description: Enterprise Agricultural Intelligence Platform
+  version: 1.0.0
+servers:
+  - url: https://api.agripilot.com/api/v1
+paths:
+  /copilot/chat:
+    post:
+      summary: Send a message to the AI Copilot
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                message:
+                  type: string
+                farm_id:
+                  type: string
+      responses:
+        '200':
+          description: AI Response
+  /vision/scan:
+    post:
+      summary: Upload an image for crop disease detection
+      security:
+        - bearerAuth: []
+      requestBody:
+        content:
+          multipart/form-data:
+            schema:
+              type: object
+              properties:
+                file:
+                  type: string
+                  format: binary
+      responses:
+        '200':
+          description: Vision Analysis Results
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT

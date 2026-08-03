@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "819286794893",
+    "project_id": "agro-pilot-80f0e",
+    "storage_bucket": "agro-pilot-80f0e.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:819286794893:android:cdda03129189e366a7b8c4",
+        "android_client_info": {
+          "package_name": "com.kvm.agropilot"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBpkk7-HY9eCswtTabnNUaJ1ymXTAmSQ9o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
